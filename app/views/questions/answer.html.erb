@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Answer!</title>
+  </head>
+  <body class="flexbox mx-auto col-10 col-md-8 col-lg-6">
+    <div>
+      <h4>You said:</h4>
+      <%= " - #{params[:question]}" %>
+    </div>
+    <div>
+      <h4>The coach says:</h4>
+      <%= " - #{@answer}" %>
+    </div>
+    <br>
+    <br>
+    <%= link_to "Ask another question", ask_path %>
+  </body>
+</html>
